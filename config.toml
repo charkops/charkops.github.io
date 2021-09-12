@@ -10,7 +10,7 @@ enableRobotsTXT = true
 pygmentsStyle = "monokai"
 
 [params]
-  footer = "The Marauders"
+  footer = "Charis Kopsacheilis"
   description = "Software Engineer & Open Source enthousiast"
   avatarURL = "/images/avatar.JPG"
   avatarSize = "size-m"
@@ -58,10 +58,10 @@ pygmentsStyle = "monokai"
     url = "/posts/"
     weight = 2
 
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 3
+  # [[menu.main]]
+  #   name = "Projects"
+  #   url = "/projects/"
+  #   weight = 3
 
   [[menu.main]]
     name = "Tags"
