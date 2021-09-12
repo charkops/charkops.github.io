@@ -303,7 +303,7 @@ Create a subdirectory for your files:</p>
 </code></pre></div><p>This will trigger a Github Workflow to start and you will be able to see its progress by navigating to your repo&rsquo;s path and clicking on <code>Actions</code></p>
 <h4 id="c-final-steps">c. Final steps</h4>
 <p>Now, this part took me a while to debug. Github will produce a separate branch <code>gh-pages</code> and put the built files in there and actually push to it. But you will have to take one final step to actually see the content.</p>
-<p>In your User <code>settings</code>, go to <code>Pages</code> and then change the <code>source</code> branch of your project to point to the <code>gh-pages</code> branch and not <code>master-main</code>. I wasted a couple of hours trying to figure why my built was not showing up on the web :)</p>
+<p>In your project&rsquo;s Github Page, go to <code>User</code> -&gt; <code>settings</code> -&gt; <code>Pages</code> and then change the <code>source</code> branch of your project to point to <code>gh-pages</code> instead of <code>master/main</code>. I wasted a couple of hours trying to figure why my build was not showing up on the web :)</p>
 <p>After all this, you and everybody else can finally enjoy your shiny new Website.</p>
 
         </p>
