@@ -1,7 +1,7 @@
 ---
 title: "Building and Deploying this website"
 date: 2021-09-11T12:32:01+08:00
-description: "Steps to building and deploying your own hugo Website/Blog"
+description: "Steps for building and deploying your own hugo Website/Blog"
 tags: ["hugo", "static", "website", "building", "deploying"]
 type: post
 ---
