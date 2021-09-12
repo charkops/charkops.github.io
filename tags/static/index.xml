@@ -14,9 +14,9 @@
       
       <guid>https://charkops.github.io/posts/building-this-website/</guid>
       <description>Getting started First things first, in order to work with Hugo you need to install it. While there are multiple ways to do so, the easiest is to just download the pre-compiled binaries for your platform.
-Go to: Install Hugo and follow the instructions
+Go to: Install Hugo and follow the instructions.
 A. Create Your Project Hugo provides a new command to create a new website:
-hugo new site my_website cd my_website B. Install a Theme In order to install a theme for hugo, you simply have to download the submodule inside the themes/ folder of your project</description>
+hugo new site my_website cd my_website B. Install a Theme In order to install a theme for hugo, you simply have to download the submodule inside the themes/ folder of your project.</description>
     </item>
     
   </channel>
