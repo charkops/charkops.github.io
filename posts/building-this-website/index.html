@@ -172,12 +172,12 @@ While there are multiple ways to do so, the easiest is to just download the pre-
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site my_website
 cd my_website
 </code></pre></div><h3 id="b-install-a-theme">B. Install a Theme</h3>
-<p>In order to install a theme for hugo, you simply have to download the submodule inside the themes/ folder of your project.</p>
+<p>In order to install a theme for hugo, you simply have to download the submodule inside the <code>themes/</code> folder of your project.</p>
 <p>This theme’s repository is: <a href="https://github.com/526avijitgupta/gokarna">https://github.com/526avijitgupta/gokarna</a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
 git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
 </code></pre></div><h3 id="c-basic-configuration">C. Basic Configuration</h3>
-<p>Every hugo website has a config.toml in its home directory. Inside this file you&rsquo;ll find a miriad of options to configure your website.</p>
+<p>Every hugo website has a <code>config.toml</code> in its home directory. Inside this file you&rsquo;ll find a miriad of options to configure your website.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/&#34;</span>
 <span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
 <span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
@@ -238,7 +238,7 @@ git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo
 </code></pre></div><p>A <code>public</code> folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.</p>
 <p>The website can be automatically published and hosted with <a href="https://www.netlify.com/">Netlify</a>, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/">AWS Amplify</a>, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Github pages</a>, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/">Render</a> and more&hellip;</p>
-<p>For me, it&rsquo;s way easier to simply contain the source code and deploy the website to Github pages <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Github pages</a>, so i&rsquo;ll take this route.</p>
+<p>For me, it&rsquo;s way easier to simply contain the source code in a single repository and deploy the website to <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Github pages</a>.</p>
 <h2 id="configuration">Configuration</h2>
 <p>In addition to <a href="https://gohugo.io/overview/configuration/">Hugo global configuration</a> and <a href="#basic-configuration">menu configuration</a>, <strong>gokarna</strong> lets you define the following parameters in your site configuration (here is a <code>config.toml</code>, whose values are default).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
@@ -275,6 +275,7 @@ git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
   <span style="color:#a6e22e">avatarURL</span> = <span style="color:#e6db74">&#34;/images/avatar.jpg&#34;</span>
 </code></pre></div><h2 id="deploying-on-github">Deploying on Github</h2>
+<p>I chose to deploy this Website on Github, because i find it simplier to contain your source code &amp; your build files in a single repository.</p>
 <h3 id="github-pages">Github Pages</h3>
 <p>With the release of <a href="https://pages.github.com/">Github Pages</a> you can now host simple static sites for your projects inside of github.</p>
 <p>In general if you name your repository <code>${your_name}.github.io</code> and push to github it will automatically start a workflow for you and deploy your site to <code>https://${your_name}.github.io</code></p>
