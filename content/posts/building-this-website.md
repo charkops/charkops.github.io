@@ -227,6 +227,6 @@ This will trigger a Github Workflow to start and you will be able to see its pro
 
 Now, this part took me a while to debug. Github will produce a separate branch `gh-pages` and put the built files in there and actually push to it. But you will have to take one final step to actually see the content.
 
-In your User `settings`, go to `Pages` and then change the `source` branch of your project to point to the `gh-pages` branch and not `master-main`. I wasted a couple of hours trying to figure why my built was not showing up on the web :)
+In your project's Github Page, go to `User` -> `settings` -> `Pages` and then change the `source` branch of your project to point to `gh-pages` instead of `master/main`. I wasted a couple of hours trying to figure why my build was not showing up on the web :)
 
 After all this, you and everybody else can finally enjoy your shiny new Website.
