@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Charis Kopsacheilis</title>
+    <link>https://gokarna-hugo.netlify.app/</link>
+    <description>Recent content on Charis Kopsacheilis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 11 Sep 2021 12:32:01 +0800</lastBuildDate><atom:link href="https://gokarna-hugo.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building and Deploying this website</title>
+      <link>https://gokarna-hugo.netlify.app/posts/building-this-website/</link>
+      <pubDate>Sat, 11 Sep 2021 12:32:01 +0800</pubDate>
+      
+      <guid>https://gokarna-hugo.netlify.app/posts/building-this-website/</guid>
+      <description>Getting started First things first, in order to work with Hugo you need to install it. While there are multiple ways to do so, the easiest is to just download the pre-compiled binaries for your platform.
+Go to: Install Hugo and follow the instructions
+A. Create Your Project Hugo provides a new command to create a new website:
+hugo new site my_website cd my_website B. Install a Theme In order to install a theme for hugo, you simply have to download the submodule inside the themes/ folder of your project</description>
+    </item>
+    
+  </channel>
+</rss>

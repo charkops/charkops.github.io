@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Building and Deploying this website</title>
+    <meta name="description" content="Steps to building and deploying your own hugo Website/Blog">
+    <meta name="keywords" content='blog, gokarna, hugo, software, engineer, charis, kopsacheilis, angular, node, nodejs, nest, nestjs, go, golang, static, website, building, deploying'>
+
+    <meta property="og:url" content="https://gokarna-hugo.netlify.app/posts/building-this-website/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Building and Deploying this website">
+    <meta property="og:description" content="Steps to building and deploying your own hugo Website/Blog">
+    <meta property="og:image" content="/images/avatar.JPG">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Building and Deploying this website">
+    <meta name="twitter:description" content="Steps to building and deploying your own hugo Website/Blog">
+    <meta property="twitter:domain" content="https://gokarna-hugo.netlify.app/posts/building-this-website/">
+    <meta property="twitter:url" content="https://gokarna-hugo.netlify.app/posts/building-this-website/">
+    <meta name="twitter:image" content="/images/avatar.JPG">
+
+    
+    <link rel="canonical" href="https://gokarna-hugo.netlify.app/posts/building-this-website/" />
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="/css/dark.css">
+
+    <script src="/js/svg-injector.min.js"></script>
+    <script src="/js/feather-icons.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://gokarna-hugo.netlify.app">
+                <img src="/images/avatar.JPG" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://gokarna-hugo.netlify.app">Charis Kopsacheilis</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="/"> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/charkops"><span data-feather='github'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="/"> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/charkops"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1>Building and Deploying this website</h1>
+        <small role="doc-subtitle">Steps to building and deploying your own hugo Website/Blog</small>
+        <p class="post-date">
+            September 11, 2021
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="/tags/hugo">hugo</a></li>
+        
+            <li class="post-tag"><a href="/tags/static">static</a></li>
+        
+            <li class="post-tag"><a href="/tags/website">website</a></li>
+        
+            <li class="post-tag"><a href="/tags/building">building</a></li>
+        
+            <li class="post-tag"><a href="/tags/deploying">deploying</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h2 id="getting-started">Getting started</h2>
+<p>First things first, in order to work with Hugo you need to install it.
+While there are multiple ways to do so, the easiest is to just download the pre-compiled binaries for your platform.</p>
+<p>Go to: <a href="https://gohugo.io/getting-started/installing/">Install Hugo</a> and follow the instructions</p>
+<h3 id="a-create-your-project">A. Create Your Project</h3>
+<p>Hugo provides a <code>new</code> command to create a new website:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site my_website
+cd my_website
+</code></pre></div><h3 id="b-install-a-theme">B. Install a Theme</h3>
+<p>In order to install a theme for hugo, you simply have to download the submodule inside the themes/ folder of your project</p>
+<p>This theme’s repository is: <a href="https://github.com/526avijitgupta/gokarna">https://github.com/526avijitgupta/gokarna</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
+git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
+</code></pre></div><h3 id="c-basic-configuration">C. Basic Configuration</h3>
+<p>Every hugo website has a config.toml in its home directory. Inside this file you&rsquo;ll find a miriad of options to configure your website</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/&#34;</span>
+<span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
+
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;gokarna&#34;</span>
+
+<span style="color:#75715e"># Automatically generate robots.txt</span>
+<span style="color:#a6e22e">enableRobotsTXT</span> = <span style="color:#66d9ef">true</span>
+
+[<span style="color:#a6e22e">menu</span>]
+  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+    <span style="color:#75715e"># Unique identifer for a menu item</span>
+    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
+
+    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>
+    
+    <span style="color:#75715e"># You can add extra information before the name (HTML format is supported), such as icons</span>
+    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+
+    <span style="color:#75715e"># You can add extra information after the name (HTML format is supported), such as icons</span>
+    <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+
+    <span style="color:#75715e"># Display name</span>
+    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Posts&#34;</span>
+
+    <span style="color:#75715e"># Weights are used to determine the ordering</span>
+    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+
+  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Tags&#34;</span>
+    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags/&#34;</span>
+    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+    
+  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;github&#34;</span>
+    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;https://github.com&#34;</span>
+    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+    
+    <span style="color:#75715e"># We use feather-icons: https://feathericons.com/</span>
+    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&lt;span data-feather=&#39;github&#39;&gt;&lt;/span&gt;&#34;</span>
+</code></pre></div><h3 id="d-creating-content">D. Creating content</h3>
+<p>All hugo content lives inside the <code>content/</code> directory, in order to create the pages for each content type, you first need to create this folder.</p>
+<p>Then, inside of <code>content/</code> create a subfolder for each content type you wanna have in your website (<em>for this theme we have <code>posts/</code> and <code>projects/</code></em>)</p>
+<p>Lastly you need to create some content.</p>
+<p>Lets say you wanna create a new Post, you can either create an empty <code>.md</code> file and fill it by hand, or you can use the hugo CLI:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new posts/first_post.md
+</code></pre></div><p>Feel free to edit the post file by adding some sample content and replacing the title value in the beginning of the file.</p>
+<p>For posts you need to add <code>type: &quot;post&quot;</code> in the markdown metadata.</p>
+<h3 id="e-developing-locally">E. Developing locally</h3>
+<p>Start the development server by running:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo serve
+</code></pre></div><p>Go to <code>http://localhost:1313</code>.</p>
+<h3 id="f-building-for-deployment">F. Building for deployment</h3>
+<p>When your site is ready to deploy, run the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo
+</code></pre></div><p>A <code>public</code> folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.</p>
+<p>The website can be automatically published and hosted with <a href="https://www.netlify.com/">Netlify</a>, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/">AWS Amplify</a>, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Github pages</a>, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/">Render</a> and more&hellip;</p>
+<p>For me, it&rsquo;s way easier to simply contain the source code and deploy the website to Github pages <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Github pages</a>, so i&rsquo;ll take this route.</p>
+<h2 id="configuration">Configuration</h2>
+<p>In addition to <a href="https://gohugo.io/overview/configuration/">Hugo global configuration</a> and <a href="#basic-configuration">menu configuration</a>, <strong>gokarna</strong> lets you define the following parameters in your site configuration (here is a <code>config.toml</code>, whose values are default).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
+  <span style="color:#75715e"># URL for the avatar on homepage</span>
+  <span style="color:#a6e22e">avatarURL</span> = <span style="color:#e6db74">&#34;&#34;</span>
+
+  <span style="color:#75715e"># Choose one of size-xs, size-s, size-m, size-l &amp; size-xl. (Default: size-m)</span>
+  <span style="color:#a6e22e">avatarSize</span> = <span style="color:#e6db74">&#34;&#34;</span>
+
+  <span style="color:#75715e"># Description to display on homepage</span>
+  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Sky above, sand below &amp; peace within&#34;</span>
+
+  <span style="color:#75715e"># Accent color is displayed when you hover over &lt;a&gt; tags</span>
+  <span style="color:#a6e22e">accentColor</span> = <span style="color:#e6db74">&#34;#FF4D4D&#34;</span>
+
+  <span style="color:#75715e"># You can use this to inject any HTML in the &lt;head&gt; tag.</span>
+  <span style="color:#75715e"># Ideal usecase for this is to import custom js/css or add your analytics snippet</span>
+  <span style="color:#a6e22e">customHeadHTML</span> = <span style="color:#e6db74">&#34;&#34;</span>
+
+  <span style="color:#75715e"># Keywords relevant for SEO</span>
+  <span style="color:#a6e22e">metaKeywords</span> = [<span style="color:#e6db74">&#34;blog&#34;</span>, <span style="color:#e6db74">&#34;gokarna&#34;</span>, <span style="color:#e6db74">&#34;hugo&#34;</span>]
+
+  <span style="color:#75715e"># If you want to display posts on the homepage, the options are</span>
+  <span style="color:#75715e"># &#34;popular&#34; (order posts by weight), &#34;recent&#34; (order posts by date)</span>
+  <span style="color:#75715e"># or &#34;&#34; (do not display, default option)</span>
+  <span style="color:#a6e22e">showPostsOnHomePage</span> = <span style="color:#e6db74">&#34;&#34;</span>
+
+  <span style="color:#75715e"># Footer text</span>
+  <span style="color:#a6e22e">footer</span> = <span style="color:#e6db74">&#34;The Marauders&#34;</span>
+</code></pre></div><h3 id="static-content">Static content</h3>
+<p>Hugo automatically serves static content that exists inside a <code>static/</code> folder in you project root directory. When you first create a hugo project, no such folder will exist, so you need to create it.</p>
+<p>E.x. If you want to serve static images (such as your avatar), you need to create <code>static/images/</code> inside your project root directory and put inside of there your images, lets say <code>avatar.jpg</code></p>
+<p>Then you can reference this image from your configuration file such as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
+  <span style="color:#a6e22e">avatarURL</span> = <span style="color:#e6db74">&#34;/images/avatar.JPG&#34;</span>
+</code></pre></div><h2 id="deploying-on-github">Deploying on Github</h2>
+<ul>
+<li>TODO</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2021 Charis Kopsacheilis</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
