@@ -24,7 +24,7 @@ cd my_website
 
 ### B. Install a Theme
 
-In order to install a theme for hugo, you simply have to download the submodule inside the themes/ folder of your project.
+In order to install a theme for hugo, you simply have to download the submodule inside the `themes/` folder of your project.
 
 This theme’s repository is: [https://github.com/526avijitgupta/gokarna](https://github.com/526avijitgupta/gokarna).
 
@@ -35,7 +35,7 @@ git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
 
 ### C. Basic Configuration
 
-Every hugo website has a config.toml in its home directory. Inside this file you'll find a miriad of options to configure your website.
+Every hugo website has a `config.toml` in its home directory. Inside this file you'll find a miriad of options to configure your website.
 
 ```toml
 baseURL = "http://example.org/"
@@ -124,7 +124,7 @@ A `public` folder will be generated, containing all static content and assets fo
 
 The website can be automatically published and hosted with [Netlify](https://www.netlify.com/), [AWS Amplify](https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/), [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), [Render](https://gohugo.io/hosting-and-deployment/hosting-on-render/) and more...
 
-For me, it's way easier to simply contain the source code and deploy the website to Github pages [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), so i'll take this route.
+For me, it's way easier to simply contain the source code in a single repository and deploy the website to [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/).
 
 ## Configuration
 In addition to [Hugo global configuration](https://gohugo.io/overview/configuration/) and [menu configuration](#basic-configuration), **gokarna** lets you define the following parameters in your site configuration (here is a `config.toml`, whose values are default).
@@ -172,6 +172,8 @@ Then you can reference this image from your configuration file such as:
 ```
 
 ## Deploying on Github
+
+I chose to deploy this Website on Github, because i find it simplier to contain your source code & your build files in a single repository.
 
 ### Github Pages
 
