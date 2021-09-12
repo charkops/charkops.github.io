@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Charis Kopsacheilis</title>
-    <link>https://gokarna-hugo.netlify.app/categories/</link>
+    <link>https://charkops.github.io/categories/</link>
     <description>Recent content in Categories on Charis Kopsacheilis</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://gokarna-hugo.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://charkops.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

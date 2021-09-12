@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on Charis Kopsacheilis</title>
-    <link>https://gokarna-hugo.netlify.app/tags/hugo/</link>
+    <link>https://charkops.github.io/tags/hugo/</link>
     <description>Recent content in hugo on Charis Kopsacheilis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 11 Sep 2021 12:32:01 +0800</lastBuildDate><atom:link href="https://gokarna-hugo.netlify.app/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Sep 2021 12:32:01 +0800</lastBuildDate><atom:link href="https://charkops.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building and Deploying this website</title>
-      <link>https://gokarna-hugo.netlify.app/posts/building-this-website/</link>
+      <link>https://charkops.github.io/posts/building-this-website/</link>
       <pubDate>Sat, 11 Sep 2021 12:32:01 +0800</pubDate>
       
-      <guid>https://gokarna-hugo.netlify.app/posts/building-this-website/</guid>
+      <guid>https://charkops.github.io/posts/building-this-website/</guid>
       <description>Getting started First things first, in order to work with Hugo you need to install it. While there are multiple ways to do so, the easiest is to just download the pre-compiled binaries for your platform.
 Go to: Install Hugo and follow the instructions
 A. Create Your Project Hugo provides a new command to create a new website:
