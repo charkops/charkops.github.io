@@ -12,7 +12,7 @@ pygmentsStyle = "monokai"
 [params]
   footer = "Charis Kopsacheilis"
   description = "Software Engineer & Open Source enthousiast"
-  avatarURL = "/images/avatar.JPG"
+  avatarURL = "/images/avatar.jpg"
   avatarSize = "size-m"
   # customHeadHTML = """
   #   <!-- KaTeX -->
