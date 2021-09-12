@@ -11,7 +11,7 @@ type: post
 First things first, in order to work with Hugo you need to install it.
 While there are multiple ways to do so, the easiest is to just download the pre-compiled binaries for your platform.
 
-Go to: [Install Hugo](https://gohugo.io/getting-started/installing/) and follow the instructions
+Go to: [Install Hugo](https://gohugo.io/getting-started/installing/) and follow the instructions.
 
 ### A. Create Your Project
 
@@ -24,7 +24,7 @@ cd my_website
 
 ### B. Install a Theme
 
-In order to install a theme for hugo, you simply have to download the submodule inside the themes/ folder of your project
+In order to install a theme for hugo, you simply have to download the submodule inside the themes/ folder of your project.
 
 This theme’s repository is: [https://github.com/526avijitgupta/gokarna](https://github.com/526avijitgupta/gokarna).
 
@@ -35,7 +35,7 @@ git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
 
 ### C. Basic Configuration
 
-Every hugo website has a config.toml in its home directory. Inside this file you'll find a miriad of options to configure your website
+Every hugo website has a config.toml in its home directory. Inside this file you'll find a miriad of options to configure your website.
 
 ```toml
 baseURL = "http://example.org/"
@@ -87,7 +87,7 @@ enableRobotsTXT = true
 
 All hugo content lives inside the `content/` directory, in order to create the pages for each content type, you first need to create this folder. 
 
-Then, inside of `content/` create a subfolder for each content type you wanna have in your website (_for this theme we have `posts/` and `projects/`_)
+Then, inside of `content/` create a subfolder for each content type you wanna have in your website (_for this theme we have `posts/` and `projects/`_).
 
 Lastly you need to create some content.
 
@@ -168,9 +168,63 @@ E.x. If you want to serve static images (such as your avatar), you need to creat
 Then you can reference this image from your configuration file such as:
 ```toml
 [params]
-  avatarURL = "/images/avatar.JPG"
+  avatarURL = "/images/avatar.jpg"
 ```
 
 ## Deploying on Github
 
-* TODO
+### Github Pages
+
+With the release of [Github Pages](https://pages.github.com/) you can now host simple static sites for your projects inside of github.
+
+In general if you name your repository `${your_name}.github.io` and push to github it will automatically start a workflow for you and deploy your site to `https://${your_name}.github.io`
+
+For example:
+
+If you have a simple repo with the file `index.html` inside of it and you follow the abovementioned naming convention, when you push to github you will be able to view your website.
+
+### Deploying Hugo with Github Pages
+
+The simple way to deploy your hugo website to github is to simply have 2 separate repositories.  
+The first repository will contain your source code which you can name whatever you want.  
+The second repository will contain the built/ready to serve files produced by ``` hugo -D ``` when building your project.  
+The `hard` way to do it is to keep a single repository and by utilizing the power of [Github Actions](https://docs.github.com/en/actions/learn-github-actions) instruct Github to build your website (`Run: hugo -D`), produce the final files, check them out to a different branch and deploy them.
+
+Essentially Github needs a folder to deploy, if you chose to go with the second method, which i think is better since you maintain only a single repository, you will have to produce this folder somehow and by automating the process you will instruct Github to produce this folder for you and keep it in a separate branch for you and deploy it all by itself every time you push to your repository.
+
+#### a. Disabling default workflow
+Since by default github pages will try to built your site with Jekyll, you have to disable this action in order to provide your own instructions on how to built the source code and deploy it as explained here [Deploy Hugo on Github](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+
+In order to do so, simply create an empty `.nojekyll` file in the root directory of your project
+
+#### b. Providing your own workflow
+Now, you have to provide your own workflow.  
+Create a subdirectory for your files:
+```bash
+mkdir .github/workflows
+```
+
+Next, create a file for your new workflow
+```bash
+touch .github/workflows/gh-pages.yml
+```
+
+You can name this file whatever you want, but it has to be a `YAML` file.
+
+Now follow the instructions in [Deploy Hugo on Github](https://gohugo.io/hosting-and-deployment/hosting-on-github/) and put your instructions inside the `.yml` file
+
+Push to your remote repository
+
+```bash
+git push -u origin master
+```
+
+This will trigger a Github Workflow to start and you will be able to see its progress by navigating to your repo's path and clicking on `Actions`
+
+#### c. Final steps
+
+Now, this part took me a while to debug. Github will produce a separate branch `gh-pages` and put the built files in there and actually push to it. But you will have to take one final step to actually see the content.
+
+In your User `settings`, go to `Pages` and then change the `source` branch of your project to point to the `gh-pages` branch and not `master-main`. I wasted a couple of hours trying to figure why my built was not showing up on the web :)
+
+After all this, you and everybody else can finally enjoy your shiny new Website.
