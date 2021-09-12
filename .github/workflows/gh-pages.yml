@@ -1,4 +1,4 @@
-name: Github Pages
+name: Hugo Website
 on: [push]
 jobs:
   Build-And-Deploy-Website:
