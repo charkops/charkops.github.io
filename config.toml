@@ -1,5 +1,5 @@
 baseURL = "https://charkops.github.io"
-title = "Charis Kopsacheilis"
+title = "Haris Kopsacheilis"
 theme = "gokarna"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -10,8 +10,8 @@ enableRobotsTXT = true
 pygmentsStyle = "monokai"
 
 [params]
-  footer = "Charis Kopsacheilis"
-  description = "Software Engineer & Open Source enthousiast"
+  footer = "Haris Kopsacheilis"
+  description = "Software Engineer & Open Source enthusiast"
   avatarURL = "/images/avatar.jpg"
   avatarSize = "size-m"
   # customHeadHTML = """
@@ -24,7 +24,7 @@ pygmentsStyle = "monokai"
   
   socialIcons = [
     {name = "github", url = "https://github.com/charkops"},
-    {name = "linkedin", url = "https://www.linkedin.com/in/charalampos-kopsacheilis-3339671a5/"},
+    {name = "linkedin", url = "https://www.linkedin.com/in/charkops"},
     # {name = "stackoverflow", url = "https://example.com"},
     # {name = "dribbble", url = "https://example.com"},
     # {name = "instagram", url = "https://example.com"},
@@ -37,6 +37,7 @@ pygmentsStyle = "monokai"
     "software",
     "engineer",
     "charis",
+    "haris",
     "kopsacheilis",
     "angular",
     "node",
